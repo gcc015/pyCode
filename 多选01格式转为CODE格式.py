@@ -11,14 +11,14 @@ import os
 import xlrd
 import xlsxwriter
 
-file_path = os.getcwd()
+file_path = os.getcwd() + '/'
 read_file = ""
 output_file = ""
-read = xlrd.open_workbook(file_path + "/" + read_file)
+read = xlrd.open_workbook(file_path + read_file)
 read_sheet = read.sheet_by_index(0)
 rows = read_sheet.nrows
 cols = read_sheet.ncols
-write = xlsxwriter.Workbook(file_path + "/" + output_file)
+write = xlsxwriter.Workbook(file_path + output_file)
 write_sheet = write.add_worksheet()
 code = []
 cstr = ","
