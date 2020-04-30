@@ -33,7 +33,7 @@ for row in range(rows):
             code.append(value)
     if row != 0:
         code = cstr.join(code)
-        write_sheet.write(row, cols - 1, code)
+        write_sheet.write(row, cols, code)
         code = []    
 
 write.close()
